@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animantions</title>
+    <style>
+        table {
+            border: 2px solid black;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .ntr:hover {
+            animation-name: TARAK;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        /* transform: ; */
+        }
+        @keyframes TARAK {
+            0% {
+                transform: translateX(0px) rotate(0turn);
+            }
+            25% {
+                transform: translateX(70px) rotate(0.5turn);            
+            }
+            50% {
+                transform: translateX(140px) rotate(1turn);
+            }
+            75% {
+                transform: translateX(210px) rotate(1.5turn);
+            }
+            100% {
+                transform: translateX(300px) rotate(2turn);
+            }
+        }
+        .jr:hover {
+            animation-name: junior;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes junior {
+            0% {
+                transform: translateX(0px) rotate(0turn);
+            }
+            25% {
+                transform: translateX(-70px) rotate(0.5turn);
+            }
+            50% {
+                transform: translateX(-140px) rotate(1turn);
+            }
+            75% {
+                transform: translateX(-210px) rotate(1.5turn);
+            }
+            100% {
+                transform: translateX(-300px) rotate(2turn);
+            }
+        }
+        .actor:hover {
+            animation-name: ram;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes ram {
+            0% {
+                transform: translateY(0px) rotate(0turn);
+            }
+            25% {
+                transform: translateY(70px) rotate(0.5turn);
+            }
+            50% {
+                transform: translateY(140px) rotate(1turn);
+            }
+            75% {
+                transform: translateY(210px) rotate(1.5turn);
+            }
+            100% {
+                transform: translateY(300px) rotate(2turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Hover Over Image, Observe the rolling of Images</h1>
+    <table>
+        <tr>
+            <td><B>DEVARA</B></td>
+            <td><img src="https://images.ottplay.com/images/jr-ntr-1704710887.jpg" alt="" class="ntr"></td>
+        </tr>
+        <tr>
+            <td><B>DEVARA</B></td>
+            <td><img src="https://images.ottplay.com/images/jr-ntr-1704710887.jpg" alt="" class="jr"></td>
+        </tr>
+        <tr>
+            <td><B>DEVARA</B></td>
+            <td><img src="https://images.ottplay.com/images/jr-ntr-1704710887.jpg" alt="" class="actor"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
